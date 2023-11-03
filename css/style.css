@@ -4,9 +4,17 @@
 }
 
 :root {
+    /* Color */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    /* Text configuration */
+    --text-style-Card_Title-size: 1rem;
+    --text-style-Card_Title-weight: 700;
+    --text-style-Title_Section-size: 1.375rem;
+    --text-style-Title_Section-weight: 700;
+    --text-style-Information-size: 1rem;
+    --text-style-Information-weight: 400;
 }
 
 .fa-solid {
@@ -63,6 +71,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0 0;
 }
 
 .logo-container {
@@ -96,6 +105,71 @@ nav ul li:hover {
     color: var(--main-color);
     border-top: var(--main-color) 2px solid;
 }
+
+/****** space between section ***********/
+.space-30 {
+    height: 30px;
+}
+
+/****** Info group ***********/
+.section_info_group {
+    display: flex;
+    flex-direction: column;
+    border: red 3px solid;
+    gap:35px;
+}
+
+    /****** headline ***********/
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.headline h2 {
+font-size: var(--text-style-Title_Section-size);
+font-weight: var(--text-style-Title_Section-weight);
+margin:0;
+}
+
+.headline p {
+    font-size: var(--text-style-Information-size);
+    font-weight: var(--text-style-Information-weight);
+    margin:0;
+}
+
+/****** Search bar ***********/
+.Search-bar {
+    display: flex;
+    margin: 0;
+}
+
+.Search-bar input {
+    font-weight: var(--text-style-Title_Section-weight);
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    border: none;
+    width:auto;
+    height: auto;
+}
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.Search-bar button {
+    background-color: var(--main-color);
+    font-weight: 700;
+    color: var(--main-bg-color);
+    align-items: center;
+    padding: 15px 16px;
+    border: 1px solid var(--main-color);
+    border-radius: 0 15px 15px 0;
+
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
