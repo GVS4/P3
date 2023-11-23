@@ -321,8 +321,8 @@ font-weight: 700;
 
 /****** Activités ***********/
 .section_activites {
-display: flex;
-flex-direction: column;
+display: block;
+/* flex-direction: column; */
 padding: 30px 30px;
 }
 
@@ -336,20 +336,32 @@ padding-bottom: 30px;
     gap: 30px;
 }
 
-.activites-cards article {
+.activites-cards a {
+    width: 100%;
+}
+
+.activites-cards .card {
     padding: 0%;
-    width: 297px;
+    width: 100%;
+    height: 100%;
+    border: solid 3px green;
 }
 .activites-cards img {
-height: 380px;
+height: 90%;
 width: 100%;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 }
 
-.section_activites .card-title {
-    padding-left:19px;
-    padding-bottom: 20px;
+.activites-cards .text-card-activity {
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.activites-cards .card-title {
+    padding-left: 19px;
+    margin: 0;
 }
 
 /****** Footer ***********/
