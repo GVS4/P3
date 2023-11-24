@@ -67,7 +67,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .euro {
@@ -324,7 +324,6 @@ font-weight: 700;
 /****** Activités ***********/
 .section_activites {
 display: block;
-/* flex-direction: column; */
 padding: 30px 30px;
 }
 
@@ -362,49 +361,9 @@ border-top-right-radius: 20px;
 
 .activites-cards .card-title {
     padding-left: 19px;
+    padding: 20px;
     margin: 0;
 }
-/****** Activités ***********/
-.section_activites {
-    padding: 30px 30px;
-    }
-    
-    .section_activites h2 {
-    padding-bottom: 30px;
-    }
-    
-    .activites-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-    
-    .activites-cards a {
-        width: 100%;
-    }
-    
-    .activites-cards .card {
-        padding: 0%;
-        width: 100%;
-        height: 100%;
-    }
-    .activites-cards img {
-    height: 90%;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    }
-    
-    .activites-cards .text-card-activity {
-        display: flex;
-        height: 10%;
-        align-items: center;
-    }
-    
-    .activites-cards .card-title {
-        padding-left: 19px;
-        margin: 0;
-    }
 
 /****** Footer ***********/
 footer {
@@ -476,6 +435,7 @@ list-style: none;
         
     .activites-cards .text-card-activity {
         height: 20%;
+        
     }
 
 }
@@ -632,36 +592,39 @@ list-style: none;
     width: 100%;
 }
 
-
 /* Activités */
-.section_activites {
-    height: 100%;
-    padding: 30px;
-    border: yellow 3px green;
-}
-.activites-cards {
-    flex-direction: column;
-    height: 100%;
+    .activites-cards {
+        flex-direction: column;
+    }
+
+    .activites-cards .card {
+        flex-direction: column;
+    }
+
+    .activites-cards img{
+        height: 200px;
+    }
+
+    .activites-cards .card-title {
+        padding: 20px;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    footer ul {
+        width: 100%;
+    }
+
+
+
 }
 
-.activites-cards a {
-    height: 100%;
-}
-
-.activites-cards .card {
-    
-    height: 100%;
-}
-
-.activites-cards img {
-    height: 141px;
-    font-weight: 315px;
-}
-
-.activites-cards .text-card-activity {
-    height: 50%;
-}
-}
 /* searchbar special query */
 
 @media (max-width: 360px) {
