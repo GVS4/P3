@@ -180,11 +180,17 @@ margin:0;
 .filter {
     display: flex;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 }
 
-.filter span {
+.texte-Filtres {
     font-weight: var(--text-style-Title_Section-weight);
+    font-size: 18px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
 }
 
 .filter button {
@@ -192,6 +198,7 @@ margin:0;
     align-items: center;
     font-weight: var(--text-style-Title_Section-weight);
     font-size: 17px;
+    height: 50px;
     gap: 10px;
     padding: 4px 19px;
     background-color: white;
@@ -349,15 +356,13 @@ padding-bottom: 30px;
     height: 100%;
 }
 .activites-cards img {
-height: 90%;
+height: 380px;
 width: 100%;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 }
 
 .activites-cards .text-card-activity {
-    display: flex;
-    height: 10%;
     align-items: center;
 }
 
@@ -368,11 +373,16 @@ border-top-right-radius: 20px;
 }
 
 /****** Footer ***********/
+
+.space-35-top-footer {
+    height: 35px;
+}
+
 footer {
     display: flex;
-    flex-direction: row;
     background-color: var(--main-bg-color);
     justify-content: space-between;
+    margin: 0;
 }
 
 footer ul {
@@ -382,6 +392,7 @@ footer ul {
     padding: 20px;
     align-items:start;
     width: 33%;
+    margin: 0;
 
 }
 
@@ -392,6 +403,7 @@ font-weight: 700;
 
 footer ul li {
 list-style: none;
+margin: 0;
 }
 
 
@@ -400,6 +412,11 @@ list-style: none;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter {
+        display: grid;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -420,24 +437,16 @@ list-style: none;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
-
-
 
     .populaires-cards .card-subtitle {
         font-size: 14px;
     }
 
     .activites-cards img {
-        height: 80%;
+        height: 200px;
     }
-        
-    .activites-cards .text-card-activity {
-        height: 20%;
-        
-    }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -504,44 +513,15 @@ list-style: none;
         color: var(--main-bg-color);
     }
 
-    /* Fliter */
-    .filter {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
+    /* Filter */
+    .filter-bar {
+        flex-wrap: wrap;
     }
 
-    .filter span {
-        grid-column: 1;
-        grid-row: 1;
-    }
-  
     .filter button {
         font-size: 14px;
-        width: 100%;
 
     }
-    .filter .b1 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .filter .b2 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .filter .b3 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .filter .b4 {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
 
     /* InfoBar */
     .infoBar svg {
@@ -610,6 +590,11 @@ list-style: none;
     width: 100%;
 }
 
+.Afficher-plus {
+    padding-top: 15px;
+
+}
+
 /* Activités */
     .activites-cards {
         flex-direction: column;
@@ -620,7 +605,7 @@ list-style: none;
     }
 
     .activites-cards img{
-        height: 200px;
+        height: 141px;
     }
 
     .activites-cards .card-title {
@@ -632,20 +617,22 @@ list-style: none;
     /* footer */
     footer {
         flex-direction: column;
-        align-items: left;
+        padding: 30px;
+        gap: 50px;
     }
+
+
 
     footer ul {
         width: 100%;
+        padding: 0px;
     }
-
-
 
 }
 
 /* searchbar special query */
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
     .Search-bar {
         display: flex;
         width: 100%;
@@ -655,4 +642,32 @@ list-style: none;
         display: flex;
         width: 60%;
     }
+
+    /* filter */
+    .filter-bar {
+        display: grid;
+    }
+
+    .filter .b1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .filter .b2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .filter .b3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .filter .b4 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+
+
 }
