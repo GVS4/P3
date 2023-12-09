@@ -324,7 +324,6 @@ nav ul li:hover {
 }
 /****** activités ***********/
 .section-activites {
-  display: block;
   padding: 30px 30px;
 }
 
@@ -359,7 +358,6 @@ nav ul li:hover {
 }
 
 .activites-cards .card-title {
-  padding-left: 19px;
   padding: 20px;
   margin: 0;
 }
@@ -373,7 +371,6 @@ nav ul li:hover {
 footer {
   display: flex;
   background-color: var(--main-bg-color);
-  justify-content: space-between;
   margin: 0;
 }
 
@@ -382,7 +379,6 @@ footer ul {
   flex-direction: column;
   gap: 15px;
   padding: 20px;
-  align-items: start;
   width: 33%;
   margin: 0;
 }
