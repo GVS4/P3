@@ -505,6 +505,10 @@ footer ul li {
     flex-wrap: wrap;
   }
 
+  .search-form {
+    display: flex;
+  }
+
   .filter button {
     font-size: 14px;
   }
