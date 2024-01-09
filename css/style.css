@@ -77,6 +77,10 @@ header {
   padding: 30px 50px;
 }
 
+.logo {
+    color: #0065fc;
+}
+
 nav {
   display: flex;
   align-items: flex-start;
